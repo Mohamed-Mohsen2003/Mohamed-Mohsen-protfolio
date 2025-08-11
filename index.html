@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamed Mohsen - Personal Portfolio</title>
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!--
+    - #MAIN
+  -->
+  <main>
+    <!--
+      - #SIDEBAR
+    -->
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/personal image.jpg" style ="border-radius: 10px;overlay: black;"alt="Mohamed Mohsen" width="80">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Mohamed Mohsen">Mohamed Mohsen</h1>
+          <p class="title">Web Developer</p>
+        </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:mohamedmohsen.webdeveloper@gmail.com" class="contact-link">mohamedmohsen.webdeveloper@gmail.com</a>
+            </div></a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="https://wa.me/01142413242" class="contact-link" target="_blank">+201142413242</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+              <time datetime="1982-06-23">August 30, 2003</time>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Maadi, Cairo, Egypt</address>
+            </div>
+          </li>
+        </ul>
+        <div class="separator"></div>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.facebook.com/muhamed.mohsen.3154/" class="social-link" target="_blank">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://www.instagram.com/muuhamed_mohhsen/" class="social-link" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/mohamed-mohsen-7a3615221/" class="social-link" target="_blank">
+              <ion-icon name="logo-LinkedIn"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://github.com/MohamedMohsen2024" class="social-link" target="_blank">
+              <ion-icon name="logo-GitHub"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <!--
+      - #main-content
+    -->
+    <div class="main-content">
+      <!--
+        - #NAVBAR
+      -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+        </ul>
+      </nav>
+      <!--
+        - #ABOUT
+      -->
+      <article class="about  active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+        <section class="about-text">
+          <p>
+            I'm Web Developer from Cairo, Egypt, working in Front-End development and WordPress development.
+            I enjoy
+            turning complex problems into simple, beautiful and intuitive designs.
+          </p>
+          <p>
+            I combine design, content, and technology to craft websites that are not only visually appealing but also user-friendly and SEO-optimized.
+            I enjoy transforming complex ideas into simple, effective, and elegant solutions. Whether it's building a responsive interface, optimizing for search engines,
+            designing visuals, or creating high-converting reels and content—I focus on delivering value that reflects your brand identity and message.
+          I’ve had the opportunity to design and develop websites and digital content for several well-known brands, helping them stand out and grow online.
+          </p>
+        </section>
+        <!--
+          - service
+        -->
+        <section class="service">
+          <h3 class="h3 service-title">What i'm doing</h3>
+          <ul class="service-list">
+            
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/coding.png" alt="Web development icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Front-End Development</h4>
+                <p class="service-item-text">
+                  craft responsive, fast, and modern user interfaces using clean code and the latest technologies to deliver seamless user experiences.
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Graphic Design</h4>
+                <p class="service-item-text">
+                  I design eye-catching visuals, logos, and branding materials that elevate brand identity and leave a lasting impression.
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/ui.png" alt="design icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">UI/UX Design</h4>
+                <p class="service-item-text">
+                  I design intuitive and user-centered interfaces that provide smooth navigation, clear visuals, and a seamless user journey across all devices.
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/plugin.png" alt="mobile app icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Wordpress Development</h4>
+                <p class="service-item-text">
+                I build custom WordPress websites that are fast, secure, and easy to manage—tailored to fit each brand’s unique goals.
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/seo-mobile-setting-gear-cog-07-svgrepo-com.svg" alt="camera icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">SEO & Speed Optimzation</h4>
+                <p class="service-item-text">
+                  I optimize websites to rank higher on search engines through smart keyword strategy, clean structure, and performance improvements.
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/reels.png" alt="camera icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Reels Creation</h4>
+                <p class="service-item-text">
+                  I create dynamic, high-impact reels and digital content that boost engagement and connect with the audience across platforms.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+            <div class="modal-content">
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+              <time datetime="2021-06-14">14 June, 2021</time>
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </article>
+      <!--
+        - #RESUME
+      -->
+      <article class="resume" data-page="resume">
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Education</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">El Ibrahimeya Secondary School.</h4>
+              <span>2018 — 2021</span>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Modern Academy for Computer Science and Management Technology.</h4>
+              <span>2021 — 2025</span>
+              <p class="timeline-text">
+                faculty of management information systems
+            </li>
+          </ol>
+        </section>
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Experience</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Front-End Developer Internship in Egyptian General Petroleum Corporation (EGPC).</h4>
+              <span>January 2022 - March 2022</span>
+              <p class="timeline-text">
+                  1- Managed speed optimization in websites to make it more speed in loading time and more professional.  
+                  <br><br>
+                  2-Building Dynamic and Engaging Web Applications in React. 
+                  <br><br>
+                  3-Managed speed optimization in websites to make it more speed in loading time and more professional .
+                  <br><br>
+                  4-Turning Ideas into User-Centric Interfaces.
+                  <br><br>
+                  5-Crafting Interactive User Experiences with React.
+                  <br><br>
+                  6-Delivering High-Performance Web Experiences.
+                  <br><br>
+                  7-Managed project and web strategic planning for entire team.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">WordPress Developer Internship in Gupco Petroleum Company.</h4>
+              <span> April 2022 - June 2022</span>
+              <p class="timeline-text">
+                1-Building web experiences that are intuitive and user-friendly.  
+                  <br><br>
+                2- Developing custom web solutions tailored to your needs with WordPress.
+                <br><br>
+                3- Adding new features and functionalities to WordPress websites using plugins.
+                <br><br>
+                4- Developing WordPress websites that are SEO compliant.
+                <br><br>
+                5- Analysing WordPress website data to improve performance.
+                <br><br>
+                6- Building High-Converting WordPress Websites.
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Team Leader Wordpress Developer in Global Results.</h4>
+              <span>July 2022 - November 2023</span>
+              <p class="timeline-text">
+                1-I was helped analyze projects before they started and did technical assessments to make sure we could create an interface that's easy for users.
+                  <br><br>
+                2-I was created a creative and professional UI&UX design for websites . 
+                  <br><br>
+                3-Wordpress development that prioritizes speed and performance .  
+                  <br><br>
+                4-Managed project and web strategic planning for entire team .  
+                  <br><br>
+                5-Tested links to identify and rectify discrepancies, determine speed and gauge traffic .
+                  <br><br>
+                6-Managed speed optimization in websites to make it more speed in loading time and more professional.
+                  <br><br>
+                7-Worked with different testing tools and frameworks, content management systems and cross-functional teams to smoothly complete projects. 
+                  <br><br>
+                8-Managed speed optimization in websites to make it more speed in loading time and more professional .
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Team Leader Wordpress Developer in Vision22.</h4>
+              <span>March 2024 - Present</span>
+              <p class="timeline-text">
+                1-I was helped analyze projects before they started and did technical assessments to make sure we could create an interface that's easy for users.
+                  <br><br>
+                2-Turning vision into reality with UI/UX design and web development expertise.  
+                  <br><br>
+                3-Wordpress development that prioritizes speed and performance .  
+                  <br><br>
+                4-Managed project and web strategic planning for entire team .  
+                  <br><br>
+                5-Tested links to identify and rectify discrepancies, determine speed and gauge traffic .
+                  <br><br>
+                6-Managed speed optimization in websites to make it more speed in loading time and more professional.
+                  <br><br>
+                7-Worked with different testing tools and frameworks, content management systems and cross-functional teams to smoothly complete projects. 
+                  <br><br>
+                8-Managed speed optimization in websites to make it more speed in loading time and more professional .
+              </p>
+            </li>
+          </ol>
+        </section>
+        <!-- <section class="skill">
+          <h3 class="h3 skills-title">My skills</h3>
+          <ul class="skills-list content-card">
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Front-End development</h5>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 98%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 98%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress development</h5>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 97%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">SEO & Speed Optimzation</h5>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+            </li>
+          </ul>
+        </section> -->
+      </article>
+      <!--
+        - #PORTFOLIO
+      -->
+      <article class="portfolio" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+        <section class="projects">          
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <!-- <div class="select-value" data-selecct-value>Select category</div> -->
+              <!-- <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div> -->
+            </button>
+            <ul class="select-list">
+              <li class="select-item">
+                <!-- <button data-select-item>All</button> -->
+              </li>
+              <li class="select-item">
+                <!-- <button data-select-item>Web design</button> -->
+              </li>
+              <li class="select-item">
+                <!-- <button data-select-item>WordPress development</button> -->
+              </li>
+              <li class="select-item">
+                <!-- <button data-select-item>Web development</button> -->
+              </li>
+            </ul>
+          </div>
+          <ul class="project-list">
+            <!-- <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://osharesourcegroup.com/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/Osha Project.png" alt="task manager" loading="lazy">
+                </figure>
+                <h3 class="project-title">Osha Resource Group</h3>
+                <p class="project-category">WordPress development</p>
+              </a>
+            </li> -->
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://newzoneeg.com/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project 1.jpg" alt="summary" loading="lazy">
+                </figure>
+                <h3 class="project-title">New Zone</h3>
+                <p class="project-category">Web Development</p>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://tigershr.com/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project 2.jpg" alt="finance" loading="lazy">
+                </figure>
+                <h3 class="project-title">Tiger Human Resource</h3>
+                <p class="project-category">Web Development</p>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://u4e-eg.com/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project 3.jpg" alt="finance" loading="lazy">
+                </figure>
+                <h3 class="project-title">United For Enginering </h3>
+                <p class="project-category">Web Development</p>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://frontline-eg.com/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project 4.jpg" alt="finance" loading="lazy">
+                </figure>
+                <h3 class="project-title">front Line  </h3>
+                <p class="project-category">Web Development</p>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://mir-marble.com/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project 5.jpg" alt="metaspark" loading="lazy">
+                </figure>
+                <h3 class="project-title">MIR For Marble</h3>
+                <p class="project-category">Web Development</p>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://enercon-eg.com/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project 6.jpg" alt="orizon" loading="lazy">
+                </figure>
+                <h3 class="project-title">Enercon</h3>
+                <p class="project-category">Web development</p>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://mmb-egypt.com/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project 7.jpg" alt="fundo" loading="lazy">
+                </figure>
+                <h3 class="project-title">MMB Egypt</h3>
+                <p class="project-category">Web Development</p>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://final.sa/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project 8.jpg" alt="brawlhalla" loading="lazy">
+                </figure>
+                <h3 class="project-title">Final sa</h3>
+                <p class="project-category">Web Development</p>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://elsherif-cookware.com/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project 9.jpg" alt="brawlhalla" loading="lazy">
+                </figure>
+                <h3 class="project-title">Elsherif Cookware</h3>
+                <p class="project-category">Web Development</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+      
+      <!--
+        - #CONTACT
+      -->
+      <article class="contact" data-page="contact">
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.223731797404!2d31.232794475341986!3d29.972999574959676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145847bedad2429d%3A0x38fa98ce955cd856!2sCorniche%20El%20Maadi%2C%20Dar%20El%20Salam%2C%20Cairo%20Governorate!5e0!3m2!1sen!2seg!4v1707666880739!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
+        </section>
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+          <form action="https://formsubmit.co/mohamedmohsen.webdeveloper@gmail.com" method="POST" class="form" data-form>
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" id="name-input" placeholder="Full name" required data-form-input>
+              <input type="email" name="email" class="form-input" id="email-input" placeholder="Email address" required data-form-input>
+            </div>
+            <textarea name="message" class="form-input" id="massage-input" placeholder="Your Message" required data-form-input></textarea>
+            <div class="form-buttons">
+              <a href="Mohamed Mohsen ( Web Developer ).pdf" download class="form-btn" target="_blank">
+                <ion-icon name="document-outline"></ion-icon>
+                <span>Download CV</span>
+            </a>
+              <button class="form-btn" type="submit" >
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </div>
+          </form>
+        </section>
+      </article>
+    </div>
+  </main>
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
