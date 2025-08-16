@@ -4,7 +4,7 @@
 
 
 /**
- * copyright 2022 @codewithsadee
+ * copyright 2025 @Mohamed-Mohsen
  */
 
 
@@ -1027,7 +1027,12 @@ main {
   font-weight: var(--fw-300);
 }
 
-
+.project-category::before {
+  content: "•";
+  color: #ffc462;
+  position: absolute;
+  left: 0;
+}
 
 
 
@@ -1888,3 +1893,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   display: flex;
   justify-content: space-around;
 }
+
+
+
+
