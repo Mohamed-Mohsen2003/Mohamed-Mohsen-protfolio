@@ -4,7 +4,7 @@
 
 
 /**
- * copyright 2025 @Mohamed-Mohsen
+ * copyright 2022 @codewithsadee
  */
 
 
@@ -835,7 +835,7 @@ main {
  * skills 
  */
 
-.skills-title { margin-bottom: 20px; }
+/* .skills-title { margin-bottom: 20px; }
 
 .skills-list { padding: 20px; }
 
@@ -866,7 +866,7 @@ main {
   background: var(--text-gradient-yellow);
   height: 100%;
   border-radius: inherit;
-}
+} */
 
 
 
@@ -1504,7 +1504,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     left: -43px;
   }
 
-  .skills-item:not(:last-child) { margin-bottom: 25px; }
+  /* .skills-item:not(:last-child) { margin-bottom: 25px; } */
 
 
 
