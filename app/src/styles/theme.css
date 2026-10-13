@@ -29,6 +29,7 @@ html[data-theme='light'] {
 }
 
 html[data-theme='light'] .navbar { background: rgba(250,248,242,.94); }
+html[data-theme='light'] .service-icon-box img { filter: brightness(.55) saturate(1.25); }
 html[data-theme='light'] .mapbox iframe { filter: grayscale(1); }
 html[data-theme='light'] .project-category::before { color: var(--orange-yellow-crayola); }
 html[data-theme='light'] body::-webkit-scrollbar-thumb { background: #cec7b8; }
