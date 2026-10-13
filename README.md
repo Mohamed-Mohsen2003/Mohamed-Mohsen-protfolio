@@ -1,75 +1,40 @@
-# Mohamed Mohsen — React Portfolio
+# Mohamed Mohsen — Portfolio
 
-A React and TypeScript portfolio that preserves the original charcoal-and-gold
-design, adds a matching light theme, and keeps the existing GitHub Pages URL.
-
-## Stack
-
-- React 19 and TypeScript with reusable components and typed portfolio data.
-- Vite for development and production builds.
-- React server rendering for initial content and search-engine metadata.
-- The original CSS layout, with separate light-theme and accessibility styles.
-- Ionicons and the original Poppins font.
-- FormSubmit for the existing contact-form delivery route.
-- Vitest and React Testing Library for behavioral regression tests.
+Personal portfolio built with Next.js, React, and TypeScript. The site is exported as static files and hosted on GitHub Pages.
 
 ## Development
 
-Requires Node.js 22.12 or newer.
+Requires Node.js 20.9 or later.
 
 ```sh
 npm ci
 npm run dev
 ```
 
-Vite serves the app under `/Mohamed-Mohsen-protfolio/`, matching production.
+Open `http://localhost:3000/Mohamed-Mohsen-protfolio/`.
 
 ## Checks and build
 
 ```sh
+npm run typecheck
+npm run lint
+npm run format:check
 npm test
 npm run build
-npm run publish:files
 ```
 
-`build` typechecks, bundles and prerenders the React application into `dist/`.
-`publish:files` copies that build to the repository root for the existing
-branch-based GitHub Pages deployment. Keep the repository name and Pages
-source unchanged to preserve the public URL. Commit the generated root
-`index.html`, `react-assets/`, `media/`, `favicon.svg`, and `.nojekyll` together
-with the application source. GitHub Pages does not build React source files
-automatically; deploy the generated files after each change.
+`npm run build` creates the static site in `out/`. Run `npm run publish:files` to copy that export into the repository root for the existing GitHub Pages deployment. Commit the generated files together with the source changes.
 
-## Project structure
+## Structure
 
-```text
-app/src/components/   Sidebar, pages, theme toggle and cursor follower
-app/src/hooks/        Persistent theme and hash-based navigation
-app/src/data/         Typed profile, skills, experience and project data
-app/src/styles/       Original dark design and light/accessibility additions
-public/               Assets copied into the production build
-scripts/              Prerendering and branch-based Pages packaging
-tests/                Theme, navigation, contact, project and cursor checks
-```
+- `src/app/`: server-rendered page composition, fonts, and metadata.
+- `src/components/`: portfolio sections and interactive controls.
+- `src/content/portfolio.ts`: profile, experience, services, and projects.
+- `src/hooks/`: theme persistence and hash navigation.
+- `src/styles/`: layout, responsive styles, and theme tokens.
+- `public/assets/`: portraits, project images, icons, and existing CV files.
+- `tests/`: navigation, theme, filtering, contact validation, and cursor behavior.
 
-Edit `app/src/data/portfolio.ts` to update skills, experience or projects.
-Project technology labels are intentionally limited to the roles already
-listed in the original portfolio; no new client-project stacks or results
-have been invented.
+The dark theme keeps the original visual identity. Theme preferences are stored locally. Project filtering uses Motion for entry, exit, and layout transitions; reduced-motion preferences are respected. The cursor effect is enabled only for fine pointers.
 
-## Behavior
-
-- The original dark theme is the default; the visitor's chosen theme persists.
-- A smooth gold cursor ring follows fine mouse pointers. It is disabled for
-  touch screens and reduced-motion preferences, and never blocks clicks.
-- About, Resume, Portfolio and Contact have shareable hash URLs and support
-  browser history.
-- Project images have responsive WebP variants and lazy loading.
-- Contact fields have accessible labels, native validation and React-managed
-  submit-button state. The original FormSubmit endpoint is retained; email
-  delivery depends on the owner's FormSubmit activation and provider checks.
-- The supplied CV PDF and DOCX are retained without content changes.
-
-## Existing deployment
-
-https://mohamed-mohsen2003.github.io/Mohamed-Mohsen-protfolio/
+The contact form uses the existing FormSubmit endpoint. Automated checks validate fields without sending messages. CV files remain unchanged.

@@ -1,0 +1,11 @@
+.next
+out
+dist
+.ssr
+_next
+react-assets
+index.html
+404.html
+404
+next-env.d.ts
+package-lock.json

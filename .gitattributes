@@ -1,4 +1,8 @@
 react-assets/** linguist-generated=true
+_next/** linguist-generated=true
+*.txt linguist-generated=true
+404.html linguist-generated=true
+404/** linguist-generated=true
 index.html linguist-generated=true
 public/media/** linguist-generated=true
 media/** linguist-generated=true

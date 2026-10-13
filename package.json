@@ -1,27 +1,34 @@
 {
-  "name": "mohamed-mohsen-react-portfolio",
-  "version": "2.0.0",
+  "name": "mohamed-mohsen-portfolio",
+  "version": "3.0.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "next dev",
     "typecheck": "tsc --noEmit",
+    "lint": "eslint src tests",
+    "format:check": "prettier --check src tests *.ts *.mjs *.json scripts/*.mjs README.md",
     "test": "vitest run",
-    "build": "npm run typecheck && vite build && vite build --ssr src/entry-server.tsx --outDir ../.ssr && node scripts/prerender.mjs",
-    "preview": "vite preview",
+    "build": "next build --webpack",
     "publish:files": "node scripts/publish-files.mjs"
   },
   "dependencies": {
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "next": "16.4.0",
+    "motion": "14.2.0"
   },
   "devDependencies": {
     "@testing-library/react": "^16.3.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "jsdom": "^27.0.0",
-    "typescript": "7.0.2",
-    "vite": "8.3.4",
-    "vitest": "^4.0.0"
+    "typescript": "5.9.3",
+    "vitest": "^4.0.0",
+    "@types/node": "^24.0.0",
+    "eslint": "^10.0.0",
+    "eslint-config-next": "16.4.0",
+    "prettier": "^3.0.0",
+    "@fontsource/poppins": "^5.0.0"
   }
 }
