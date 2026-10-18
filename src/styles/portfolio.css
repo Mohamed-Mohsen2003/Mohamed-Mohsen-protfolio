@@ -584,7 +584,8 @@ main {
 .project-img {
   position: relative;
   width: 100%;
-  height: 200px;
+  aspect-ratio: 3 / 2;
+  height: auto;
   border-radius: 16px;
   overflow: hidden;
   margin-bottom: 15px;
@@ -790,12 +791,6 @@ textarea.form-input::-webkit-resizer {
 
 .form-btn:disabled:hover::before {
   background: var(--gradient-card);
-}
-
-@media (min-width: 450px) {
-  .project-img {
-    height: auto;
-  }
 }
 
 @media (min-width: 580px) {
@@ -1350,6 +1345,8 @@ button:focus-visible {
   animation: none;
 }
 .project-img picture {
+  position: absolute;
+  inset: 0;
   display: block;
   width: 100%;
   height: 100%;

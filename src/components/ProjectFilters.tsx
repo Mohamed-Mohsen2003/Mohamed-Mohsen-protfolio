@@ -2,7 +2,14 @@ import { motion, useReducedMotion } from 'motion/react';
 import type { ProjectService } from '../content/portfolio';
 
 export type ProjectFilter = 'All' | ProjectService;
-const filters: ProjectFilter[] = ['All', 'UI/UX Design', 'SEO'];
+const filters: ProjectFilter[] = [
+  'All',
+  'Frontend Development',
+  'WordPress Development',
+  'Shopify Development',
+  'UI/UX Design',
+  'SEO',
+];
 
 interface ProjectFiltersProps {
   selected: ProjectFilter;

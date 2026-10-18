@@ -66,17 +66,30 @@ describe('contact validation', () => {
 });
 
 describe('existing content', () => {
-  it('keeps nine projects with Tesla replacing In Action and filters their listed services', async () => {
+  it('keeps thirteen projects with Tesla replacing In Action and filters their listed services', async () => {
     render(<Portfolio />);
-    expect(screen.getAllByRole('link')).toHaveLength(9);
+    expect(screen.getAllByRole('link')).toHaveLength(13);
     expect(
       screen.getByRole('link', { name: /View Tesla Developments website/ }).getAttribute('href'),
     ).toBe('https://tesladevelopments.com/');
     expect(screen.queryByRole('link', { name: /View In Action website/ })).toBeNull();
     fireEvent.click(screen.getByRole('button', { name: 'SEO', exact: true }));
-    await waitFor(() => expect(screen.getAllByRole('link')).toHaveLength(4));
+    await waitFor(() => expect(screen.getAllByRole('link')).toHaveLength(5));
     fireEvent.click(screen.getByRole('button', { name: 'All', exact: true }));
-    await waitFor(() => expect(screen.getAllByRole('link')).toHaveLength(9));
+    await waitFor(() => expect(screen.getAllByRole('link')).toHaveLength(13));
+  });
+  it('filters by platform and keeps Enercon in WordPress rather than frontend', async () => {
+    render(<Portfolio />);
+    fireEvent.click(screen.getByRole('button', { name: 'Frontend Development', exact: true }));
+    await waitFor(() => expect(screen.getAllByRole('link')).toHaveLength(3));
+    expect(screen.queryByRole('link', { name: /View Enercon website/ })).toBeNull();
+    fireEvent.click(screen.getByRole('button', { name: 'WordPress Development', exact: true }));
+    await waitFor(() => expect(screen.getAllByRole('link')).toHaveLength(8));
+    expect(screen.getByRole('link', { name: /View Enercon website/ })).toBeTruthy();
+    fireEvent.click(screen.getByRole('button', { name: 'Shopify Development', exact: true }));
+    await waitFor(() => expect(screen.getAllByRole('link')).toHaveLength(2));
+    expect(screen.getByRole('link', { name: /View Casual website/ })).toBeTruthy();
+    expect(screen.getByRole('link', { name: /View Cave Egypt website/ })).toBeTruthy();
   });
   it('shows six services, keeps the theme control in navigation, and removes CV download links', () => {
     render(<App />);
