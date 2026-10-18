@@ -92,14 +92,16 @@ describe('existing content', () => {
     expect(screen.getByRole('link', { name: /View Etlala Watches website/ })).toBeTruthy();
     expect(screen.getByRole('link', { name: /View Cave Egypt website/ })).toBeTruthy();
   });
-  it('shows six services, keeps the theme control in navigation, and removes CV download links', () => {
+  it('shows six services, keeps the theme control in navigation, and downloads the original CV from the sidebar', () => {
     render(<App />);
     expect(document.querySelectorAll('.service-item')).toHaveLength(6);
     expect(
       screen.getByRole('button', { name: 'Switch to light mode' }).closest('nav'),
     ).not.toBeNull();
-    expect(document.querySelector('a[download]')).toBeNull();
-    expect(screen.queryByText(/download cv/i)).toBeNull();
+    const download = screen.getByRole('link', { name: 'Download CV', hidden: true });
+    expect(download.closest('aside')).not.toBeNull();
+    expect(download.getAttribute('href')).toBe('./Mohamed Mohsen ( Web Developer ).pdf');
+    expect(download.hasAttribute('download')).toBe(true);
   });
   it('uses the international WhatsApp link and accessible contact expansion', () => {
     render(<Sidebar />);

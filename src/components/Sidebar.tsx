@@ -105,6 +105,10 @@ export function Sidebar() {
             </li>
           ))}
         </ul>
+        <a className="cv-download" href={profile.cv} download="Mohamed-Mohsen-CV.pdf">
+          <Icon name="download-outline" />
+          <span>Download CV</span>
+        </a>
       </div>
     </aside>
   );
