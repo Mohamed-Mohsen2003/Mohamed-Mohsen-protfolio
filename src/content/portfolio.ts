@@ -235,6 +235,8 @@ export const projects: Project[] = [
     imageHeight: 640,
     services: ['WordPress Development'],
   },
+  // Remove the block comment below to restore these projects.
+  /*
   {
     name: 'Vision22 Marketing Agency',
     url: 'https://vision22adv.com/',
@@ -251,6 +253,7 @@ export const projects: Project[] = [
     imageHeight: 640,
     services: ['WordPress Development'],
   },
+  */
 ];
 
 export const socialLinks = [

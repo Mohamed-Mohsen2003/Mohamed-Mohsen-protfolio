@@ -66,9 +66,9 @@ describe('contact validation', () => {
 });
 
 describe('existing content', () => {
-  it('keeps fourteen projects with Tesla replacing In Action and filters their listed services', async () => {
+  it('keeps twelve projects with Tesla replacing In Action and filters their listed services', async () => {
     render(<Portfolio />);
-    expect(screen.getAllByRole('link')).toHaveLength(14);
+    expect(screen.getAllByRole('link')).toHaveLength(12);
     expect(
       screen.getByRole('link', { name: /View Tesla Developments website/ }).getAttribute('href'),
     ).toBe('https://tesladevelopments.com/');
@@ -76,17 +76,13 @@ describe('existing content', () => {
     expect(screen.queryByRole('link', { name: /View Provider website/ })).toBeNull();
     expect(screen.queryByRole('link', { name: /View Tiger Human Resource website/ })).toBeNull();
     expect(
-      screen
-        .getByRole('link', { name: /View Vision22 Marketing Agency website/ })
-        .getAttribute('href'),
-    ).toBe('https://vision22adv.com/');
-    expect(screen.getByRole('link', { name: /View Arab Nuts website/ }).getAttribute('href')).toBe(
-      'https://arab-nuts.com/',
-    );
+      screen.queryByRole('link', { name: /View Vision22 Marketing Agency website/ }),
+    ).toBeNull();
+    expect(screen.queryByRole('link', { name: /View Arab Nuts website/ })).toBeNull();
     fireEvent.click(screen.getByRole('button', { name: 'SEO', exact: true }));
     await waitFor(() => expect(screen.getAllByRole('link')).toHaveLength(4));
     fireEvent.click(screen.getByRole('button', { name: 'All', exact: true }));
-    await waitFor(() => expect(screen.getAllByRole('link')).toHaveLength(14));
+    await waitFor(() => expect(screen.getAllByRole('link')).toHaveLength(12));
   });
   it('filters by platform and keeps Enercon in WordPress rather than frontend', async () => {
     render(<Portfolio />);
@@ -94,7 +90,7 @@ describe('existing content', () => {
     await waitFor(() => expect(screen.getAllByRole('link')).toHaveLength(3));
     expect(screen.queryByRole('link', { name: /View Enercon website/ })).toBeNull();
     fireEvent.click(screen.getByRole('button', { name: 'WordPress Development', exact: true }));
-    await waitFor(() => expect(screen.getAllByRole('link')).toHaveLength(8));
+    await waitFor(() => expect(screen.getAllByRole('link')).toHaveLength(6));
     expect(screen.getByRole('link', { name: /View Enercon website/ })).toBeTruthy();
     fireEvent.click(screen.getByRole('button', { name: 'Shopify Development', exact: true }));
     await waitFor(() => expect(screen.getAllByRole('link')).toHaveLength(3));
