@@ -2,6 +2,6 @@
 :HL["/Mohamed-Mohsen-protfolio/_next/static/media/916d3686010a8de2-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/Mohamed-Mohsen-protfolio/_next/static/media/c04551857776278f-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/Mohamed-Mohsen-protfolio/_next/static/media/d869208648ca5469-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-:HL["/Mohamed-Mohsen-protfolio/_next/static/css/d8edcfe68aacaa64.css","style"]
+:HL["/Mohamed-Mohsen-protfolio/_next/static/css/17747661959c8533.css","style"]
 1:[["children",{"s":"__PAGE__","h":160}]]
-0:{"b":"x-XU1u2m5eLHSorsVxIhv","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"jzdxUVDdRSl8UnguhmLcU","t":{"t":{"s":"","h":80,"c":"$Q1"}}}

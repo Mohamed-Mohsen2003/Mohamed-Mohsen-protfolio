@@ -1149,12 +1149,15 @@ textarea.form-input::-webkit-resizer {
     top: 60px;
     max-height: calc(100dvh - 80px);
     overflow-y: auto;
-    scrollbar-width: thin;
-    scrollbar-color: var(--color-border) transparent;
+    scrollbar-width: none;
     height: 100%;
     margin-bottom: 0;
     padding-top: 60px;
     z-index: 1;
+  }
+
+  .sidebar::-webkit-scrollbar {
+    display: none;
   }
 
   .sidebar-info {
