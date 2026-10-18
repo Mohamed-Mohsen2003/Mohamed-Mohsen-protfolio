@@ -122,11 +122,19 @@ export const education = [
   },
 ];
 
-export type ProjectService = 'Web Development' | 'UI/UX Design' | 'SEO';
+export type ProjectService =
+  | 'Web Development'
+  | 'Frontend Development'
+  | 'WordPress Development'
+  | 'Shopify Development'
+  | 'UI/UX Design'
+  | 'SEO';
 export interface Project {
   name: string;
   url: string;
-  image: number;
+  image: number | string;
+  imageAlt?: string;
+  imageHeight?: number;
   services: ProjectService[];
 }
 
@@ -134,8 +142,10 @@ export const projects: Project[] = [
   {
     name: 'Final SA',
     url: 'https://final.sa/',
-    image: 8,
-    services: ['Web Development', 'UI/UX Design', 'SEO'],
+    image: 'final-sa',
+    imageAlt: 'Final SA photography equipment rental website preview',
+    imageHeight: 640,
+    services: ['Frontend Development', 'UI/UX Design', 'SEO'],
   },
   {
     name: 'Provider',
@@ -146,8 +156,10 @@ export const projects: Project[] = [
   {
     name: 'Beamer',
     url: 'https://beamerint.com/',
-    image: 5,
-    services: ['Web Development', 'UI/UX Design', 'SEO'],
+    image: 'beamer',
+    imageAlt: 'Beamer lighting website preview',
+    imageHeight: 640,
+    services: ['WordPress Development', 'UI/UX Design', 'SEO'],
   },
   {
     name: 'New Zone',
@@ -158,22 +170,35 @@ export const projects: Project[] = [
   {
     name: 'United for Engineering',
     url: 'https://u4e-eg.com/',
-    image: 3,
-    services: ['Web Development', 'UI/UX Design'],
+    image: 'united-for-engineering',
+    imageAlt: 'United for Engineering website preview',
+    imageHeight: 640,
+    services: ['WordPress Development', 'UI/UX Design'],
   },
   {
-    name: 'In Action',
-    url: 'https://inaction-agency.com/',
-    image: 6,
-    services: ['Web Development', 'UI/UX Design'],
+    name: 'Tesla Developments',
+    url: 'https://tesladevelopments.com/',
+    image: 'tesla-developments',
+    imageAlt: 'Tesla Developments real estate website preview',
+    imageHeight: 640,
+    services: ['Frontend Development', 'UI/UX Design', 'SEO'],
   },
   {
-    name: 'Elsherif Cookware',
-    url: 'https://elsherif-cookware.com/',
-    image: 9,
-    services: ['Web Development'],
+    name: 'Enercon',
+    url: 'https://enercon-eg.com/',
+    image: 'enercon',
+    imageAlt: 'Enercon engineering services website preview',
+    imageHeight: 640,
+    services: ['Frontend Development', 'UI/UX Design'],
   },
-  { name: 'Rock', url: 'https://rock-egy.com/', image: 7, services: ['Web Development'] },
+  {
+    name: 'Etlala Watches',
+    url: 'https://etlala-watches.com/',
+    image: 'etlala-watches',
+    imageAlt: 'Etlala Watches online store preview',
+    imageHeight: 640,
+    services: ['Shopify Development'],
+  },
   {
     name: 'Tiger Human Resource',
     url: 'https://tigershr.com/',

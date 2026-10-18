@@ -66,11 +66,15 @@ describe('contact validation', () => {
 });
 
 describe('existing content', () => {
-  it('retains all nine projects and filters only by their original listed services', async () => {
+  it('keeps nine projects with Tesla replacing In Action and filters their listed services', async () => {
     render(<Portfolio />);
     expect(screen.getAllByRole('link')).toHaveLength(9);
+    expect(
+      screen.getByRole('link', { name: /View Tesla Developments website/ }).getAttribute('href'),
+    ).toBe('https://tesladevelopments.com/');
+    expect(screen.queryByRole('link', { name: /View In Action website/ })).toBeNull();
     fireEvent.click(screen.getByRole('button', { name: 'SEO', exact: true }));
-    await waitFor(() => expect(screen.getAllByRole('link')).toHaveLength(3));
+    await waitFor(() => expect(screen.getAllByRole('link')).toHaveLength(4));
     fireEvent.click(screen.getByRole('button', { name: 'All', exact: true }));
     await waitFor(() => expect(screen.getAllByRole('link')).toHaveLength(9));
   });

@@ -2,6 +2,7 @@ import type { Project } from '../content/portfolio';
 import { Icon } from './Icon';
 
 export function ProjectCard({ project }: { project: Project }) {
+  const imageName = typeof project.image === 'number' ? `project-${project.image}` : project.image;
   return (
     <a
       href={project.url}
@@ -15,17 +16,17 @@ export function ProjectCard({ project }: { project: Project }) {
         </div>
         <picture>
           <source
-            srcSet={`./media/project-${project.image}-small.webp 480w, ./media/project-${project.image}.webp 960w`}
+            srcSet={`./media/${imageName}-small.webp 480w, ./media/${imageName}.webp 960w`}
             sizes="(min-width: 1024px) 280px, (min-width: 768px) 340px, calc(100vw - 54px)"
             type="image/webp"
           />
           <img
-            src={`./media/project-${project.image}.webp`}
-            alt={`${project.name} website on desktop, tablet and mobile`}
+            src={`./media/${imageName}.webp`}
+            alt={project.imageAlt ?? `${project.name} website on desktop, tablet and mobile`}
             loading="lazy"
             decoding="async"
             width="960"
-            height="720"
+            height={project.imageHeight ?? 720}
           />
         </picture>
       </figure>

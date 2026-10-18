@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   description:
     'Full-Stack Developer with over four years of experience in React, Python, Laravel, .NET, WordPress, Flutter, CRM and SaaS development.',
   alternates: { canonical: siteUrl },
-  icons: { icon: `${siteUrl}favicon.svg` },
+  icons: { icon: `${siteUrl}favicon.svg?v=2` },
   openGraph: {
     title: 'Mohamed Mohsen — Full-Stack Developer',
     description:

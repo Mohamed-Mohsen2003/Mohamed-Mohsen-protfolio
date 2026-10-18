@@ -5,7 +5,6 @@ import { CursorFollower } from './CursorFollower';
 import { Sidebar } from './Sidebar';
 import { ThemeToggle } from './ThemeToggle';
 import { pages, usePageNavigation, type Page } from '../hooks/usePageNavigation';
-import { profile } from '../content/portfolio';
 
 const titles: Record<Page, string> = {
   about: 'About Me',
@@ -65,11 +64,6 @@ export default function PortfolioShell({ sections }: { sections: Record<Page, Re
           ))}
         </div>
       </main>
-      <footer className="site-footer">
-        <a href={profile.source} target="_blank" rel="noopener noreferrer">
-          Source code on GitHub
-        </a>
-      </footer>
     </>
   );
 }
