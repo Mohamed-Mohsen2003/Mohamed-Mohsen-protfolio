@@ -206,7 +206,9 @@ export const projects: Project[] = [
   {
     name: 'New Zone',
     url: 'https://newzoneeg.com/',
-    image: 1,
+    image: 'new-zone',
+    imageAlt: 'New Zone kitchens and furniture website mockup',
+    imageHeight: 640,
     services: ['WordPress Development', 'UI/UX Design'],
   },
   {
@@ -234,15 +236,19 @@ export const projects: Project[] = [
     services: ['WordPress Development'],
   },
   {
-    name: 'Provider',
-    url: 'https://providersa.com/',
-    image: 4,
-    services: ['WordPress Development', 'UI/UX Design', 'SEO'],
+    name: 'Vision22 Marketing Agency',
+    url: 'https://vision22adv.com/',
+    image: 'vision22-agency',
+    imageAlt: 'Vision22 Marketing Agency website mockup',
+    imageHeight: 640,
+    services: ['WordPress Development'],
   },
   {
-    name: 'Tiger Human Resource',
-    url: 'https://tigershr.com/',
-    image: 2,
+    name: 'Arab Nuts',
+    url: 'https://arab-nuts.com/',
+    image: 'arab-nuts',
+    imageAlt: 'Arab Nuts roasted nuts WooCommerce store website mockup',
+    imageHeight: 640,
     services: ['WordPress Development'],
   },
 ];

@@ -73,8 +73,18 @@ describe('existing content', () => {
       screen.getByRole('link', { name: /View Tesla Developments website/ }).getAttribute('href'),
     ).toBe('https://tesladevelopments.com/');
     expect(screen.queryByRole('link', { name: /View In Action website/ })).toBeNull();
+    expect(screen.queryByRole('link', { name: /View Provider website/ })).toBeNull();
+    expect(screen.queryByRole('link', { name: /View Tiger Human Resource website/ })).toBeNull();
+    expect(
+      screen
+        .getByRole('link', { name: /View Vision22 Marketing Agency website/ })
+        .getAttribute('href'),
+    ).toBe('https://vision22adv.com/');
+    expect(screen.getByRole('link', { name: /View Arab Nuts website/ }).getAttribute('href')).toBe(
+      'https://arab-nuts.com/',
+    );
     fireEvent.click(screen.getByRole('button', { name: 'SEO', exact: true }));
-    await waitFor(() => expect(screen.getAllByRole('link')).toHaveLength(5));
+    await waitFor(() => expect(screen.getAllByRole('link')).toHaveLength(4));
     fireEvent.click(screen.getByRole('button', { name: 'All', exact: true }));
     await waitFor(() => expect(screen.getAllByRole('link')).toHaveLength(14));
   });
