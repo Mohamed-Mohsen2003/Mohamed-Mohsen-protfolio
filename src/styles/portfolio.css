@@ -1294,6 +1294,7 @@ button:focus-visible {
 }
 .service-outline {
   display: block;
+  margin: 0 auto;
   color: var(--color-accent);
 }
 .service-content-box {
