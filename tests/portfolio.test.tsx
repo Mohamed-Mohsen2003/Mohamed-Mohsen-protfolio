@@ -66,9 +66,9 @@ describe('contact validation', () => {
 });
 
 describe('existing content', () => {
-  it('keeps thirteen projects with Tesla replacing In Action and filters their listed services', async () => {
+  it('keeps fourteen projects with Tesla replacing In Action and filters their listed services', async () => {
     render(<Portfolio />);
-    expect(screen.getAllByRole('link')).toHaveLength(13);
+    expect(screen.getAllByRole('link')).toHaveLength(14);
     expect(
       screen.getByRole('link', { name: /View Tesla Developments website/ }).getAttribute('href'),
     ).toBe('https://tesladevelopments.com/');
@@ -76,7 +76,7 @@ describe('existing content', () => {
     fireEvent.click(screen.getByRole('button', { name: 'SEO', exact: true }));
     await waitFor(() => expect(screen.getAllByRole('link')).toHaveLength(5));
     fireEvent.click(screen.getByRole('button', { name: 'All', exact: true }));
-    await waitFor(() => expect(screen.getAllByRole('link')).toHaveLength(13));
+    await waitFor(() => expect(screen.getAllByRole('link')).toHaveLength(14));
   });
   it('filters by platform and keeps Enercon in WordPress rather than frontend', async () => {
     render(<Portfolio />);
@@ -87,8 +87,9 @@ describe('existing content', () => {
     await waitFor(() => expect(screen.getAllByRole('link')).toHaveLength(8));
     expect(screen.getByRole('link', { name: /View Enercon website/ })).toBeTruthy();
     fireEvent.click(screen.getByRole('button', { name: 'Shopify Development', exact: true }));
-    await waitFor(() => expect(screen.getAllByRole('link')).toHaveLength(2));
+    await waitFor(() => expect(screen.getAllByRole('link')).toHaveLength(3));
     expect(screen.getByRole('link', { name: /View Casual website/ })).toBeTruthy();
+    expect(screen.getByRole('link', { name: /View Etlala Watches website/ })).toBeTruthy();
     expect(screen.getByRole('link', { name: /View Cave Egypt website/ })).toBeTruthy();
   });
   it('shows six services, keeps the theme control in navigation, and removes CV download links', () => {

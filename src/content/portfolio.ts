@@ -164,6 +164,14 @@ export const projects: Project[] = [
     services: ['Shopify Development'],
   },
   {
+    name: 'Etlala Watches',
+    url: 'https://etlala-watches.com/',
+    image: 'etlala-watches',
+    imageAlt: 'Etlala Watches Shopify store website preview',
+    imageHeight: 640,
+    services: ['Shopify Development'],
+  },
+  {
     name: 'Tesla Developments',
     url: 'https://tesladevelopments.com/',
     image: 'tesla-developments',
