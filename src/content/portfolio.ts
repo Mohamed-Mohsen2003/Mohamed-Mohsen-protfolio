@@ -142,7 +142,7 @@ export const projects: Project[] = [
   {
     name: 'Final SA',
     url: 'https://final.sa/',
-    image: 'final-sa',
+    image: 'final-sa-responsive',
     imageAlt: 'Final SA photography equipment rental website preview',
     imageHeight: 640,
     services: ['Frontend Development', 'UI/UX Design', 'SEO'],

@@ -5,4 +5,4 @@
 :HL["/Mohamed-Mohsen-protfolio/_next/static/css/8b80101497bb7fec.css","style"]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"_not-found","h":96,"c":"$Q2"}]]
-0:{"b":"A34zSgcs53CM8rLPy2Txl","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"nDMR9mpnGsxOVIP1nInp5","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
