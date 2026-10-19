@@ -6,7 +6,7 @@ export const profile = {
   whatsapp: 'https://wa.me/201142413242',
   location: 'Maadi, Cairo, Egypt',
   cv: './Mohamed Mohsen ( Web Developer ).pdf',
-  source: 'https://github.com/Mohamed-Mohsen2003/Mohamed-Mohsen-protfolio/tree/main/src',
+  source: 'https://github.com/Mohamed-Mohsen2003/Mohamed-Mohsen-portfolio/tree/main/src',
 };
 
 export const aboutParagraphs = [

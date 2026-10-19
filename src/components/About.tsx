@@ -20,7 +20,7 @@ export function About() {
               <div className="service-icon-box">
                 {service.image !== undefined ? (
                   <Image
-                    src={`/Mohamed-Mohsen-protfolio/assets/images/${service.image}`}
+                    src={`/Mohamed-Mohsen-portfolio/assets/images/${service.image}`}
                     alt=""
                     width={40}
                     height={40}
