@@ -11,7 +11,7 @@ npm ci
 npm run dev
 ```
 
-Open `http://localhost:3000/Mohamed-Mohsen-portfolio/`.
+Open `http://localhost:3000/mohamed-mohsen-portfolio/`.
 
 ## Checks and build
 

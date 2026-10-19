@@ -13,7 +13,7 @@ export function Sidebar() {
       <div className="sidebar-info">
         <figure className="avatar-box">
           <Image
-            src="/Mohamed-Mohsen-portfolio/assets/images/personal image.jpg"
+            src="/mohamed-mohsen-portfolio/assets/images/personal image.jpg"
             style={{ borderRadius: 10 }}
             alt="Mohamed Mohsen"
             width={584}

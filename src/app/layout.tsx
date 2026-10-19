@@ -5,7 +5,7 @@ import type { ReactNode } from 'react';
 import '../styles/portfolio.css';
 import '../styles/themes.css';
 
-const siteUrl = 'https://mohamed-mohsen2003.github.io/Mohamed-Mohsen-portfolio/';
+const siteUrl = 'https://mohamed-mohsen2003.github.io/mohamed-mohsen-portfolio/';
 
 const poppins = localFont({
   src: [
