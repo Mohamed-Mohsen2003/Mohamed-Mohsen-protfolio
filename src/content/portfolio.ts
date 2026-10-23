@@ -67,6 +67,18 @@ export const skillGroups = [
 
 export const experience = [
   {
+    role: 'Full-Stack Developer',
+    company: 'Future of Egypt for Sustainable Development',
+    period: 'October 2026 — Present',
+    note: 'Full-time · Cairo',
+    points: [
+      'Develop and maintain full-stack web applications and internal systems across front-end, back-end, and databases.',
+      'Build responsive, user-friendly interfaces and integrate them with RESTful APIs and back-end services.',
+      'Work with cross-functional teams to turn business requirements into reliable features delivered on schedule.',
+      'Improve performance, security, and code quality through testing, debugging, and code reviews.',
+    ],
+  },
+  {
     role: 'Web Developer',
     company: 'Auto Media Marketing Agency',
     period: 'October 2024 — Present',
@@ -81,7 +93,7 @@ export const experience = [
   {
     role: 'Web Development Team Leader',
     company: 'Vision22 Marketing Agency',
-    period: 'March 2024 — March 2026',
+    period: 'March 2024 — June 2026',
     points: [
       'Led web project planning and coordinated development tasks across the team.',
       'Assessed client requirements and translated them into practical design and development plans.',
