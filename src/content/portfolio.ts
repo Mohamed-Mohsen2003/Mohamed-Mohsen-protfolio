@@ -105,7 +105,7 @@ export const experience = [
   {
     role: 'Web Developer',
     company: 'Global Results Outsourcing',
-    period: 'July 2022 — November 2023',
+    period: 'July 2023 — March 2024',
     points: [
       'Contributed to project assessments and developed responsive, user-friendly website interfaces.',
       'Created UI/UX designs and implemented WordPress websites based on project requirements.',
