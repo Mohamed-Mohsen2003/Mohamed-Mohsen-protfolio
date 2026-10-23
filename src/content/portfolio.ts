@@ -70,7 +70,7 @@ export const experience = [
     role: 'Full-Stack Developer',
     company: 'Future of Egypt for Sustainable Development',
     period: 'September 2026 — Present',
-    note: 'Full-time · Cairo',
+    note: 'Cairo',
     points: [
       'Develop and maintain full-stack web applications and internal systems across front-end, back-end, and databases.',
       'Build responsive, user-friendly interfaces and integrate them with RESTful APIs and back-end services.',
