@@ -79,7 +79,7 @@ export const experience = [
     ],
   },
   {
-    role: 'Web Developer',
+    role: 'Team Leader Web Developer',
     company: 'Auto Media Marketing Agency',
     period: 'October 2024 — Present',
     note: 'Remote',
@@ -286,4 +286,6 @@ export const socialLinks = [
   },
   { label: 'GitHub', icon: 'logo-github', url: 'https://github.com/MohamedMohsen2024' },
   { label: 'WhatsApp', icon: 'logo-whatsapp', url: profile.whatsapp },
+  // Placeholder until the Behance account is ready.
+  { label: 'Behance', icon: 'logo-behance', url: '#' },
 ];
