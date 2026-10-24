@@ -284,7 +284,7 @@ export const socialLinks = [
     icon: 'logo-linkedin',
     url: 'https://www.linkedin.com/in/mohamed-mohsen-7a3615221/',
   },
-  { label: 'GitHub', icon: 'logo-github', url: 'https://github.com/MohamedMohsen2024' },
+  { label: 'GitHub', icon: 'logo-github', url: 'https://github.com/Mohamed-Mohsen2003' },
   { label: 'WhatsApp', icon: 'logo-whatsapp', url: profile.whatsapp },
   // Placeholder until the Behance account is ready.
   { label: 'Behance', icon: 'logo-behance', url: '#' },
